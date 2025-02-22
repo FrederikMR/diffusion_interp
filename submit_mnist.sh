@@ -1,5 +1,5 @@
     #! /bin/bash
-    #BSUB -q gpua40
+    #BSUB -q gpua10
     #BSUB -J mnist_score
     #BSUB -n 4
     #BSUB -gpu "num=1:mode=exclusive_process"

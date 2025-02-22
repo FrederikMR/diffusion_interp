@@ -135,7 +135,7 @@ def train():
     # start the training loop
     opt = torch.optim.Adam(score_network.parameters(), lr=3e-4)
     dloader = torch.utils.data.DataLoader(mnist_dset, batch_size=64, shuffle=True)
-    device = torch.device("cpu")#torch.device('cuda:0')  # change this if you don't have a gpu
+    device = torch.device('cuda:0')  # change this if you don't have a gpu
     score_network = score_network.to(device)
     t0 = time.time()
     for i_epoch in range(400):
