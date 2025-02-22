@@ -1,7 +1,7 @@
     #! /bin/bash
     #BSUB -q gpua40
     #BSUB -J mnist_score
-    #BSUB -n 1
+    #BSUB -n 4
     #BSUB -gpu "num=1:mode=exclusive_process"
     #BSUB -W 24:00
     #BSUB -R "span[hosts=1]"
